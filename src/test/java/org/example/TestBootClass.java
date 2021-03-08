@@ -95,7 +95,7 @@ public class TestBootClass {
     }
 
     private static void loadProperties() throws IOException {
-        try(InputStream inputStream = new FileInputStream("src/test/resources/conf.properties")) {
+        try(InputStream inputStream = new FileInputStream("conf.properties")) {
             Properties properties = new Properties();
             properties.load(inputStream);
             login = properties.getProperty("login");
