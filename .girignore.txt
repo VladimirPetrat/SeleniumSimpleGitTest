@@ -32,4 +32,4 @@ build/
 
 ### Docker env file for ims app
 .ims-env
-src/test/resources/conf.properties
+*.properties
