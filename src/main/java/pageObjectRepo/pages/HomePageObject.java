@@ -15,6 +15,10 @@ public class HomePageObject extends PageObject {
         driver.get(homePageUrl);
     }
 
+    public HomePageObject(WebDriver driver) {
+        super(driver);
+    }
+
     public SignInPageobject clickOnSignInButton() {
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
         signInButton.click();
